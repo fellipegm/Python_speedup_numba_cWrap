@@ -1,0 +1,8 @@
+simulation.csv
+t,P,x,v
+dados.csv
+t,OP,P,x_kano,x_karnopp,x_lugre,x_gms
+dados_v.csv
+t,dot_x_karnopp,dot_x_lugre,dot_x_gms
+
+tempo de execução = 2.915 s

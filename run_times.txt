@@ -1,0 +1,64 @@
+c puro
+dt = 5e-6
+exec time: 5.12 s
+
+dt = 1e-5
+exec time: 2.57 s
+
+
+Python puro
+dt = 1e-5
+Simulation time: 886.78 s
+
+
+Numba
+dt = 5e-6
+Simulation time: 6.31 s
+
+dt = 1e-5
+Simulation time: 3.45s
+
+c cython wrap
+dt = 5e-6
+Simulation time: 6.07 s
+
+dt = 1e-5
+Simulation time: 3.29 s
+
+OLD 
+dt = 1e-5
+c
+Kano model = 1.8e-2 s
+Karnopp model = 2.915 s
+LuGre model = 7.26 s
+GMS model = not done
+
+c++ classe
+Kano model = 2.3e-2 s
+Karnopp model = 2.987 s
+LuGre model = 7.314 s
+GMS model = 21.499 s
+
+c++ -Ofast
+Kano model = 2.2e-2 s
+Karnopp model = 2.81 s
+LuGre model = 6.751 s
+GMS model = 7.273 s
+
+c++ -O3 -march=ivybridge -mtune=ivybridge
+Kano model = 2.4e-2 s
+Karnopp model = 2.88 s
+LuGre model = 7.45 s
+GMS model = 8.479 s
+
+c++ -Ofast -march=ivybridge -mtune=ivybridge
+Kano model = 2.2e-2 s
+Karnopp model = 2.795 s
+LuGre model = 6.749 s
+GMS model = 7.237 s
+
+matlab c_mex
+Kano model = 0.1 s
+Karnopp model = 27.5 s
+LuGre model = 30.8 s
+GMS model = 53.3 s
